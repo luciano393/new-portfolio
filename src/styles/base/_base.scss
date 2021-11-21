@@ -25,6 +25,9 @@ body {
     font-size: 16px;
     background-color: var(--color-secondary);
     color: var(--color-gray-light);
+    @media (min-width: 720px) {
+        font-size: 20px;
+    }
 }
 
 .container {
@@ -36,6 +39,16 @@ body {
     @media (min-width: 720px) {
         max-width: 42rem;
         margin: auto;
+    }
+}
+
+.link {
+    display: block;
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 1.3rem;
+    &:hover {
+        text-decoration: underline;
     }
 }
 
@@ -64,9 +77,16 @@ a {
     text-decoration: none;
     color: var(--color-gray-light);
 }
+.navbar {
+    border-bottom: 2px solid var(--color-gray-light);
+}
 
 .box {
     margin: 2rem 0;
+}
+
+.image-project {
+    border: 2px solid var(--color-gray-light);
 }
 
 .input-box {
@@ -92,7 +112,7 @@ a {
 }
 
 .footer {
-    border-top: 1px solid var(--color-gray-light);
+    border-top: 2px solid var(--color-gray-light);
     display: flex;
     justify-content: center;
     align-items: center;

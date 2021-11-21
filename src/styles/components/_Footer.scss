@@ -4,4 +4,8 @@
     flex-direction: column;
     justify-content: center;
     padding: 2rem;
+    @media (min-width: 720px) {
+        max-width: 42rem;
+        margin: auto;
+    }
 }

@@ -16,24 +16,10 @@ export const Navbar = () => {
   return (
     <header className="Navbar-wrapper">
       <div className="navbar">
-        {showBtn
-        ? (<Link to="/" onClick={handleButton} className="brand">
-              <FontAwesomeIcon icon={faLevelUpAlt} className="arrow" />
-              <p>Back to blog</p>
-            </Link>)
-        : (<Link className="brand" to="/about" onClick={handleButton}>
-            <IKImage
-              path="/mifotote_jAh8HxRCr.png?updatedAt=1637179271417"
-              transformation={[
-            {
-              height: "400",
-              width: "400",
-            },
-            ]}
-            />
-            <p>Luciano Ibarra</p>
-          </Link>)
-        }
+        <nav>
+          <Link to="/" className="item">Proyectos</Link>
+          <Link to="/about" className="item">Sobre mi</Link>
+        </nav>
 
         {checked ? (
           <FontAwesomeIcon

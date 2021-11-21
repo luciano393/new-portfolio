@@ -1,0 +1,22 @@
+.Project {
+    position: relative;
+    margin-bottom: 2rem;
+    h2, p {
+        text-align: center;
+    }
+    .box-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        .image-project {
+            border-radius: 1rem;
+            height: 30rem;
+            margin: auto;
+        }
+        @media (min-width: 720px) {
+            flex-direction: row;
+        }
+    }
+}
