@@ -81,8 +81,21 @@ a {
     border-bottom: 2px solid var(--color-gray-light);
 }
 
+.box-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
 .box {
-    margin: 2rem 0;
+    text-align: center;
+    .icon-languages {
+        font-size: 4rem;
+        margin-bottom: .5rem;
+    }
 }
 
 .image-project {

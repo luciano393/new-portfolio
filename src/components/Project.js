@@ -7,7 +7,7 @@ export const Project = ({title, description, imageone, imagetwo, url}) => {
         <section className="Project">
             <h2>{title}</h2>
             <p>{description}</p>
-            <div className="box-container">
+            <div className="project-container">
                 <IKImage 
                     path={`/${imageone}`}
                     className="image-project"
@@ -17,7 +17,7 @@ export const Project = ({title, description, imageone, imagetwo, url}) => {
                     className="image-project"
                 />
             </div>
-            <Link to={`/${url}`} className="link">Ver mas</Link>
+            <a href={url} className="link">Ver mas</a>
         </section>
     )
 }
