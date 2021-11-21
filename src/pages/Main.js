@@ -1,9 +1,14 @@
 import React from 'react';
+import { Heading } from '../components/Heading';
 import { Project } from '../components/Project';
 
 export const Main = () => {
     return (
         <div className="container">
+            <Heading 
+                title="Mis Proyectos"
+                description="Estos son algunos de los proyectos en los que estuve trabajando ultimamente:"
+            />
             <Project 
                 title="Payments"
                 description="Aplicación creada con MongoDB, Express js, React js y Node Js"

@@ -11,6 +11,7 @@ export const Profile = () => {
             />
             <h2>Mi nombre es Luciano Ibarra</h2>
             <h3>Soy desarrollador web full stack</h3>
+            <p>Me especializo en JavaScript y Python. Soy estudiante de la Universidad Nacional de Lujan, donde curso la carrera Licenciatura en Sistemas de información. Ademas actualmente me encuentro en un curso de Egg Educación aprendiendo Java.</p>
         </section>
     )
 }

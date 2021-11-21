@@ -1,17 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSun, faMoon, faLevelUpAlt } from "@fortawesome/free-solid-svg-icons";
+import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 import { useTheme } from "../hooks/useTheme";
-import { IKImage } from "imagekitio-react";
 import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const [checked, setChecked, toggleThemeChange] = useTheme();
-  const [showBtn, setShowBtn ] = useState(false)
   
-  const handleButton = () => {
-    setShowBtn(!showBtn);
-  }
 
   return (
     <header className="Navbar-wrapper">
